@@ -1,20 +1,11 @@
-using Microsoft.AspNetCore.Mvc;
+namespace Data_asp_net.Pages;
+
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Data_asp_net.Pages
+public class IndexModel : PageModel
 {
-    public class IndexModel : PageModel
+    public void OnGet()
     {
-        private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-
-        }
     }
 }
