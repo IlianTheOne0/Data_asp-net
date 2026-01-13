@@ -5,5 +5,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <p>Username: @Model.UserName</p>
+    <p>Birth Date: @Model.BirthDate</p>
+    <p>User Age: @Model.UserAge</p>
+    <p>Is Admin: @(Model.IsAdmin ? "Yes" : "No")</p>
+    <p>Account Created On: @Model.CreationTime.ToString("d MMM yyyy H:m")</p>
 </div>
